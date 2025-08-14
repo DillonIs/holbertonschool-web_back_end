@@ -1,0 +1,2 @@
+// find all matches to name="Holberton school" in all documents in mongodb
+db.school.find( {name: "Holberton school" } )
