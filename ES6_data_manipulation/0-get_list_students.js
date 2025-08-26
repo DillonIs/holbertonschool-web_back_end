@@ -1,4 +1,5 @@
-const getListStudents = () => [
+export default function getListStudents() {
+  return [
     {
       id: 1,
       firstname: 'Guillaume',
@@ -15,5 +16,4 @@ const getListStudents = () => [
       location: 'San Francisco'
     },
   ];
-
-export default getListStudents;
+}
