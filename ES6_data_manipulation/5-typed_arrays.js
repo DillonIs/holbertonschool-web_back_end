@@ -4,6 +4,6 @@ export default function createInt8TypedArray(length, position, value) {
   if (position > int8Array.length) {
     throw new Error('Position outside of range');
   }
-  view[position] = value;
+  int8Array[position] = value;
   return new DataView(buffer);
 }
