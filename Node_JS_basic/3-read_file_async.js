@@ -31,19 +31,20 @@ function countStudents(path) {
       });
 
       // Save the total students to console log
-      console.log(`Number of students: ${totalStudents}`);
+      const result = [];
+      result.push(`Number of students: ${totalStudents}`);
 
       // Save each field with the number of students
       for (const field in students) {
         if (Object.prototype.hasOwnProperty.call(students, field)) {
           const studentList = students[field];
-          console.log(
+          result.push(
             `Number of students in ${field}: ${studentList.length}. List: ${studentList.join(', ')}`,
           );
         }
       }
 
-      resolve();
+      resolve(result);
     });
   });
 }
